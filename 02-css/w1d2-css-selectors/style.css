@@ -1,0 +1,37 @@
+h1 {
+  color: rebeccapurple;
+  text-align: center;
+}
+
+h2 {
+  color: cornflowerblue;
+}
+
+/* class selectors begin with a dot (.) */
+.underline {
+  text-decoration: underline;
+}
+
+.container {
+  background-color: pink;
+  width: 70%;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: grey;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+nav a {
+  color: limegreen;
+  text-decoration: none;
+}
+
+/*
+nav a {
+  margin: 10px;
+  padding on the parent is a better choice
+}
+*/
