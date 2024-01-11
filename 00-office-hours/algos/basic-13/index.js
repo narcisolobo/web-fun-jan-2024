@@ -88,6 +88,19 @@ printArrayValsTrad(colors);
   element.
 */
 
+function printMaxOfArray(arr) {
+  let max = arr[0];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+  }
+  console.log(max);
+}
+
+let nums = [3, 7, 1, 9, 3, 4, 6];
+printMaxOfArray(nums);
+
 /*
   6. Get and Print Average
   printAverageOfArray(arr)
