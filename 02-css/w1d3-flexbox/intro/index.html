@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CSS Flexbox</h1>
+    <p>Flex containers and flex items.</p>
+    <p>Flex works only on <em>direct children.</em></p>
+    <p><strong>Parents tell the children how to behave.</strong></p>
+    <h2>Justify-content</h2>
+    <ul>
+        <li>flex-start (default)</li>
+        <li>flex-end</li>
+        <li>center</li>
+        <li>space-around</li>
+        <li>space-between*</li>
+        <li>space-evenly</li>
+    </ul>
+    <h2>Align-items</h2>
+    <ul>
+        <li>flex-start</li>
+        <li>flex-end</li>
+        <li>center</li>
+        <li>stretch (default)</li>
+    </ul>
+    <h2>How do we make children misbehave?</h2>
+    <div class="row">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box misbehave"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

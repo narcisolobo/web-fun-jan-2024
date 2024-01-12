@@ -1,0 +1,29 @@
+h1 {
+  color: rebeccapurple;
+}
+
+nav {
+  background-color: aquamarine;
+  height: 50px;
+}
+
+.container {
+  width: 704px;
+  margin: 0 auto;
+  outline: 1px dashed red;
+}
+
+main {
+  background-color: coral;
+  width: 500px;
+  height: 500px;
+  display: inline-block;
+}
+
+aside {
+  background-color: hotpink;
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+  height: 250px;
+}

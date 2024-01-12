@@ -1,0 +1,21 @@
+h1 {
+  color: rebeccapurple;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: burlywood;
+  height: 300px;
+}
+
+.box {
+  background-color: coral;
+  width: 150px;
+  height: 150px;
+}
+
+.misbehave {
+  align-self: flex-start;
+}
