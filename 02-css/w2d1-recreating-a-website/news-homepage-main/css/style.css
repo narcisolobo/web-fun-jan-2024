@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+/* variables start */
+:root {
+  --accent-color: hsl(35, 77%, 62%);
+  --dark-900: hsl(240, 100%, 5%);
+  --light-100: hsl(36, 100%, 99%);
+}
+/* variables end */
+
+/* utility classes start */
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  width: 960px;
+  margin-inline: auto;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem; /* a rem unit is 16px, or the size of the root font */
+}
+
+.card {
+  flex: 1;
+}
+
+.card-image {
+  width: 25%;
+}
+
+.card-body {
+  width: 75%;
+}
+
+/* utility classes end */
+
+/* header classes start */
+header {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+.nav-menu {
+  list-style: none;
+}
+/* header classes end */
+
+/* hero section start */
+main {
+  flex: 2;
+}
+
+.hero-title {
+  flex: 1;
+}
+
+.hero-copy {
+  flex: 1;
+}
+
+aside {
+  flex: 1;
+  background-color: var(--dark-900);
+  color: var(--light-100);
+}
+
+.aside-title {
+  color: var(--accent-color);
+}
+/* hero section end */
