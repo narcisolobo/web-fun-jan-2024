@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* utility classes start */
+
+.container {
+  width: 800px;
+  margin-inline: auto;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.card {
+  border: 2px solid grey;
+  margin-bottom: 1.5rem;
+}
+
+.card-header {
+  background-color: rgb(24, 24, 24);
+  color: white;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+/* utility classes end */
+
+/* nav classes start */
+nav {
+  outline: 2px dashed goldenrod;
+  background-color: rgb(24, 24, 24);
+  color: white;
+  padding: 20px 0;
+}
+
+.brand {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.nav-menu {
+  list-style: none;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+/* nav classes end */
+
+main {
+  outline: 2px dashed rebeccapurple;
+  align-self: flex-start;
+  flex: 2;
+}
+
+/* aside classes start */
+aside {
+  outline: 2px dashed darkgreen;
+  flex: 1;
+}
+
+.avatar {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.action {
+  width: 24px;
+}
+
+div.gap-sm {
+  gap: 0.5rem;
+}
+/* aside classes end */
