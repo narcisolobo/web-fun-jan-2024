@@ -1,6 +1,7 @@
 # The Terminal
 
 ## Intro and History
+![VT100 Terminal](./assets/VT100_terminal.png)
 Back in the days before graphical user interfaces, we interacted with computers through a text-based hardware interface called the terminal. The terminal we know today is a software emulation of that hardware.
 
 Many applications that developers use do not have a graphical user interface (GUI). You may have already used such an app if you've used *node*. Knowing one's way around the terminal is a vital skill for any developer.
