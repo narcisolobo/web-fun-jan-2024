@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* utility classes start */
+.container {
+  width: 960px;
+  margin-inline: auto;
+}
+
+.img-block {
+  display: block;
+  max-width: 100%;
+}
+
+.icon {
+  width: 32px;
+}
+
+div.justify-start,
+ul.justify-start {
+  justify-content: flex-start;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gap {
+  gap: 1.5rem;
+}
+
+.gap-sm {
+  gap: 0.5rem;
+}
+
+.circle {
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid black;
+  aspect-ratio: 1;
+}
+
+.mb {
+  margin-bottom: 1.5rem;
+}
+/* utility classes end */
+
+/* header classes start */
+.action-header {
+  background-color: #999999;
+  padding: 10px 20px;
+}
+
+.logo {
+  width: 24px;
+}
+
+.main-header {
+}
+
+nav ul {
+  list-style: none;
+}
+/* header classes end */
+
+/* main classes start */
+main {
+  flex: 3;
+}
+/* main classes end */
+
+/* aside classes start */
+aside {
+  flex: 2;
+  align-self: flex-start;
+}
+/* aside classes end */
+
+/* card classes start */
+.card {
+  border: 2px solid gray;
+}
+
+.card-header {
+  background-color: #cf2a27;
+  color: white;
+  padding: 5px 20px;
+}
+
+.card-body {
+  padding: 20px;
+}
+/* card classes end */
+
+.arrow {
+  width: 32px;
+}
+
+.votes {
+  text-align: center;
+  padding-right: 20px;
+  align-self: flex-start;
+}

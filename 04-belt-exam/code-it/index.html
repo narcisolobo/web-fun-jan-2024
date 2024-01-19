@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeIt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header start -->
+    <header class="action-header d-flex">
+        <div class="d-flex gap">
+            <img class="logo" src="./images/cat-logo.png" alt="CodeIt Logo">
+            <a href="#" class="brand">CodeIt</a>
+            <div class="form">
+                <input type="text" name="search" id="search">
+                <button class="search-btn" onclick="searchAlert()">Go</button>
+            </div>
+        </div>
+        <div class="d-flex gap">
+            <button class="btn btn-accent">Get App</button>
+            <button class="btn btn-secondary">Log In</button>
+        </div>
+    </header>
+    <header class="main-header">
+        <div class="container d-flex justify-start gap">
+            <div class="circle">
+                <img src="./images/cat-logo.png" alt="CodeIt Logo" class="logo" onclick="changeTitle()">
+            </div>
+            <h1 id="title">c/Dojo</h1>
+            <button class="btn btn-primary" onclick="removeElement(this)">Join</button>
+        </div>
+        <nav class="container">
+            <ul class="d-flex justify-start gap">
+                <li><a href="#" class="nav-link">Posts</a></li>
+                <li><a href="#" class="nav-link">Wiki</a></li>
+                <li><a href="#" class="nav-link">c/Dojo</a></li>
+                <li><a href="#" class="nav-link">Discord</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- header end -->
+    <div class="container d-flex gap">
+        <main>
+            <div class="card mb">
+                <div class="card-body d-flex">
+                    <div class="votes">
+                        <img class="arrow" src="./images/up-arrow.png" alt="upvote" onclick="projectUpVote()">
+                        <p id="project-votes" class="vote-count">29</p>
+                        <img class="arrow" src="./images/down-arrow.png" alt="downvote">
+                    </div>
+                    <div class="card-content">
+                        <h2>Best of Project Week 2022!</h2>
+                        <img class="img-block" src="./images/project-week.jpg" alt="Best of Project Week">
+                        <div class="d-flex justify-start gap-sm">
+                            <img src="./images/speech-bubble.png" alt="Comment" class="icon">
+                            <small>42 comments</small>
+                            <img src="./images/share.png" alt="share" class="icon">
+                            <small>share</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body d-flex">
+                    <div class="votes">
+                        <img class="arrow" src="./images/up-arrow.png" alt="upvote" onclick="catUpVote()">
+                        <p id="cat-votes" class="vote-count">29</p>
+                        <img class="arrow" src="./images/down-arrow.png" alt="downvote">
+                    </div>
+                    <div class="card-content">
+                        <h2>I use my cat as a rubber duck, is that weird?</h2>
+                        <img class="img-block" src="./images/cat.jpg" alt="My cat" id="cat-pic" onclick="changeCat()">
+                        <div class="d-flex justify-start gap-sm">
+                            <img src="./images/speech-bubble.png" alt="Comment" class="icon">
+                            <small>42 comments</small>
+                            <img src="./images/share.png" alt="share" class="icon">
+                            <small>share</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside>
+            <div class="card mb">
+                <div class="card-header">
+                    <h3>About the Dojo</h3>
+                </div>
+                <div class="card-body">
+                    <p>Changing lives with code and an experienced team of debuggers.</p>
+                </div>
+            </div>
+            <div class="card mb">
+                <div class="card-header">
+                    <h3>Discord</h3>
+                </div>
+                <div class="card-body">
+                    <button class="btn" onclick="joinDiscord()">discord.gg/cdojo</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h3>c/Dojo Rules</h3>
+                </div>
+                <div class="card-body">
+                    <ol>
+                        <li>Follow the 20 minute rule!</li>
+                        <li>Don't compare yourself to others!</li>
+                        <li>Learn actively!</li>
+                        <li>Don't chase best practices (yet)!</li>
+                        <li>When you're behind, ask for help!</li>
+                    </ol>
+                    <label for="favorite-rule">What's your favorite rule?</label>
+                    <select name="favorite-rule" id="favorite-rule" onchange="showFavorite()">
+                        <option selected hidden disabled>Pick a rule</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
