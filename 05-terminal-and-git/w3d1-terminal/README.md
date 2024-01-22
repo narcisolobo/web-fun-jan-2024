@@ -157,5 +157,20 @@ You have now learned the very basics of important terminal commands! Here are so
 - `cp` copies a file to another directory
 - `rm` and `rmdir` remove a file or empty directory (look up how to remove a non-empty directory!)
 
+## Popular Third-Party Alternatives
+PC:
+- [Windows Terminal](https://apps.microsoft.com/detail/9N0DX20HK701?rtc=1&hl=en-us&gl=US)
+- [cmder](https://cmder.app/)
+- [Git Bash](https://git-scm.com/downloads)
+- [Tabby](https://tabby.sh/)
+- [Hyper](https://hyper.is/)
+- [Alacritty](https://alacritty.org/)
+
+Mac:
+- [Warp](https://www.warp.dev/)
+- [iTerm2](https://iterm2.com/)
+- [Hyper](https://hyper.is/)
+- [Alacritty](https://alacritty.org/)
+
 Further reading:
 [MDN Command Line Crash Course](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line)
