@@ -101,6 +101,7 @@ function printMaxOfArray(arr) {
 let nums = [3, 7, 1, 9, 3, 4, 6];
 printMaxOfArray(nums);
 
+// Room 1: Challenges 6 & 7
 /*
   6. Get and Print Average
   printAverageOfArray(arr)
@@ -115,6 +116,7 @@ printMaxOfArray(nums);
   between 1 and 255 (inclusive).
 */
 
+// Room 2: Challenges 8 & 9
 /*
   8. Square the Values
   squareArrayVals(arr)
@@ -129,6 +131,7 @@ printMaxOfArray(nums);
   the number of array values greater than Y.
 */
 
+// Room 3: Challenges 10 & 11
 /*
   10. Zero Out Negative Numbers
   zeroOutArrayNegativeVals(arr)
@@ -143,6 +146,7 @@ printMaxOfArray(nums);
   average values for that array
 */
 
+// Room 4: Challenges 12 & 13
 /*
   12. Shift Array Values
   shiftArrayValsLeft(arr)
