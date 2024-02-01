@@ -1,0 +1,73 @@
+h1 {
+  color: rebeccapurple;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 1.5rem;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn {
+  background-color: gold;
+  padding: 0.5rem 0;
+  width: 100%;
+}
+
+.boxes {
+  border: 2px solid black;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+}
+
+.topic {
+  flex: 2;
+}
+
+.fun-fact {
+  flex: 1;
+  display: none;
+}
+
+@media (min-width: 640px) {
+  h1 {
+    color: limegreen;
+  }
+
+  .btns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .btn {
+    background-color: cornflowerblue;
+  }
+
+  .fun-fact {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    color: deeppink;
+  }
+
+  .btns {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .btn {
+    background-color: darkred;
+    color: white;
+  }
+}
