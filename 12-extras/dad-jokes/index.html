@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <title>Dad Jokes</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark mb-3 shadow">
+      <div class="container">
+        <a class="navbar-brand" href="#">Dad Jokes</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="container">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12 col-md-12 mb-3">
+          <div class="card shadow">
+            <div class="card-header">
+              <h1 class="m-0">Dad Joke of the Day</h1>
+            </div>
+            <div class="card-body">
+              <p class="card-text" id="dad-joke">
+                Why do trees seem suspicious on sunny days? Dunno, they're just
+                a bit shady.
+              </p>
+              <div class="text-end">
+                <button
+                  class="btn btn-primary"
+                  onclick="getDadJoke()"
+                  data-bs-toggle="tooltip"
+                  data-bs-title="Har har har."
+                  data-bs-placement="bottom">
+                  Get a new joke
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12 col-md-12">
+          <h2>Modal Demo</h2>
+          <button
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#popUpModal">
+            Pop Up
+          </button>
+        </div>
+      </div>
+    </main>
+    <div class="modal" tabindex="-1" id="popUpModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Modal body text goes here.</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
