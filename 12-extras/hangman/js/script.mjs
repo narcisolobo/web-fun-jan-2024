@@ -16,6 +16,7 @@ function startGame() {
   let goodGuessCount = 0;
   let badGuessCount = 0;
 
+  // setup
   clearBlanks(blanks);
   updateHangman(hangmanImg, 0);
   playButton.remove();
@@ -23,23 +24,29 @@ function startGame() {
   const word = getWord(words);
   console.log(word);
 
+  // adding event listeners
   alphabet.forEach(function (char) {
     const button = document.getElementById(char);
 
     button.addEventListener('click', function () {
+      // get the letter user clicked on
       const letter = getLetter(button);
       console.log(letter);
+      // increment turnCount
       turnCount++;
 
+      // disable button
       button.classList.add('disabled');
 
       if (!word.includes(letter)) {
+        // letter not in word
         badGuessCount++;
         updateHangman(hangmanImg, badGuessCount);
         if (badGuessCount >= 7) {
           gameOver(buttonsDiv, word);
         }
       } else {
+        // letter in word
         const wordArray = word.split('');
         for (let i = 0; i < wordArray.length; i++) {
           if (wordArray[i] === letter) {
