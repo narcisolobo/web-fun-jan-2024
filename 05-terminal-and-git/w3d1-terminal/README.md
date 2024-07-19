@@ -69,12 +69,12 @@ Many applications that developers use do not have a graphical user interface (GU
    
    The `ls` command (Mac/Git Bash) or the `dir` command (PC) lists the files and folders in the current directory. Let’s use this command to list the files and folders on the Desktop.
 
-    ```shell
+    ```sh
     #mac/gitbash
     ls
     ```
 
-    ```shell
+    ```sh
     #pc
     dir
     ```
@@ -84,13 +84,13 @@ Many applications that developers use do not have a graphical user interface (GU
 
     A useful option for the `ls` command is the `-a` option, which allows us to see hidden files.
 
-    ```shell
+    ```sh
     #mac/gitbash
     ls -a
     ```
     Another useful option is `-l`, which includes important details about each file and folder.files.
 
-    ```shell
+    ```sh
     #mac/gitbash
     ls -l
     ```
